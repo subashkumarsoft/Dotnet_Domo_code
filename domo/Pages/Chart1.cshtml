@@ -1,0 +1,11 @@
+﻿@page
+@model ProgrammaticFiltering.Pages.Chart1Model
+@{ Layout = null; }
+<p>@Model.url</p>
+@*<p>@Model.embedToken</p>*@
+<form id="form" action="@Model.url" method="post">
+    <input type="hidden" name="embedToken" value="@Model.embedToken" />
+</form>
+<script>
+    document.getElementById("form").submit();
+</script>
